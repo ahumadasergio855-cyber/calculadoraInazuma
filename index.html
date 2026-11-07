@@ -14,23 +14,27 @@
                 id="pantalla"
                 readonly>
         <br><br>
-        <buttom onclick="agregarNumero('1')">1</buttom>
-        <buttom onclick="agregarNumero('2')">2</buttom>
-        <buttom onclick="agregarNumero('3')">3</buttom>
-        <buttom onclick="agregarNumero('4')">4</buttom>
-        <buttom onclick="agregarNumero('5')">5</buttom>
-        <buttom onclick="agregarNumero('6')">6</buttom>
-        <buttom onclick="agregarNumero('7')">7</buttom>
-        <buttom onclick="agregarNumero('8')">8</buttom>
-        <buttom onclick="agregarNumero('9')">9</buttom>
-        <buttom onclick="agregarNumero('.')">.</buttom>
+        <button onclick="agregarNumero('1')">1</button>
+        <button onclick="agregarNumero('2')">2</button>
+        <button onclick="agregarNumero('3')">3</button>
+        <button onclick="agregarNumero('4')">4</button>
+        <button onclick="agregarNumero('5')">5</button>
+        <button onclick="agregarNumero('6')">6</button>
+        <button onclick="agregarNumero('7')">7</button>
+        <button onclick="agregarNumero('8')">8</button>
+        <button onclick="agregarNumero('9')">9</button>
+        <button onclick="agregarNumero('.')">.</button>
 
         <br><br>
 
-        <button onclick="sumar()">+</button>
-        <button onclick="restar()">-</button>
-        <button onclick="multiplicar()">x</button>
-        <button onclick="dividir()">÷</button>
+        <button onclick="agregarOperador('+')">+</button>
+        <button onclick="agregarOperador('-')">-</button>
+        <button onclick="agregarOperador('*')">x</button>
+        <button onclick="agregarOperador('/')">÷</button>
+        <button onclick="raizCuadrada()">√</button>
+
+        <button onclick="calcular()">=</button>
+        <button onclick="limpiar()">C</button>
 
       </div>
         <script src="scripts.js"></script>
