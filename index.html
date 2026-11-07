@@ -10,20 +10,20 @@
       <div class="calculadora">
         <h1>⚡ Inazuma Calculator ⚡</h1>
 
-        <input type="text"
-                id="pantalla"
-                readonly>
+        <div class="pantalla-contenedor">
+            <button
+            class=""historial-toggle"
+            id="boton-historial"
+            onclick="alternarHistorial()">
+        </button>
+        </div>
+
+        <input 
+        type ="text"
+        id="pantalla"
+        readonly>
         <br><br>
-        <button onclick="agregarNumero('1')">1</button>
-        <button onclick="agregarNumero('2')">2</button>
-        <button onclick="agregarNumero('3')">3</button>
-        <button onclick="agregarNumero('4')">4</button>
-        <button onclick="agregarNumero('5')">5</button>
-        <button onclick="agregarNumero('6')">6</button>
-        <button onclick="agregarNumero('7')">7</button>
-        <button onclick="agregarNumero('8')">8</button>
-        <button onclick="agregarNumero('9')">9</button>
-        <button onclick="agregarNumero('.')">.</button>
+        
 
         <br><br>
 
@@ -35,6 +35,20 @@
 
         <button onclick="calcular()">=</button>
         <button onclick="limpiar()">C</button>
+
+        <button class="numero" onclick="agregarNumero('0')">
+        <button onclick="agregarNumero('1')">1</button>
+        <button onclick="agregarNumero('2')">2</button>
+        <button onclick="agregarNumero('3')">3</button>
+        <button onclick="agregarNumero('4')">4</button>
+        <button onclick="agregarNumero('5')">5</button>
+        <button onclick="agregarNumero('6')">6</button>
+        <button onclick="agregarNumero('7')">7</button>
+        <button onclick="agregarNumero('8')">8</button>
+        <button onclick="agregarNumero('9')">9</button>
+        <button onclick="agregarNumero('.')">.</button>    
+        </button>
+
 
       </div>
       <!-- HISTORIAL DE OPERACIONES -->
