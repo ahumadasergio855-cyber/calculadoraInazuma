@@ -1,3 +1,4 @@
+
 // CONTROL DE LA CALCULADORA
 
 let resultadoMostrado = false;
@@ -7,11 +8,10 @@ let historialOperaciones = [];
 
 // AGREGAR NUMEROS
 
+
 function agregarNumero(numero) {
 
     let pantalla = document.getElementById("pantalla");
-
-    // Si había un resultado, comenzamos una operación nueva
 
     if (resultadoMostrado || pantalla.value === "Error") {
 
@@ -21,10 +21,21 @@ function agregarNumero(numero) {
 
     }
 
+    // No permitimos números decimales
+
+    if (numero === ".") {
+
+        pantalla.value = "Error";
+
+        resultadoMostrado = true;
+
+        return;
+
+    }
+
     pantalla.value = pantalla.value + numero;
 
 }
-
 
 // AGREGAR OPERADORES
 
@@ -203,5 +214,28 @@ function limpiarHistorial() {
     historialOperaciones = [];
 
     mostrarHistorial();
+
+}
+
+
+function alternarHistorial() {
+
+    let panel = document.getElementById("historial-panel");
+
+    let boton = document.getElementById("boton-historial");
+
+    if (panel.hidden) {
+
+        panel.hidden = false;
+
+        boton.textContent = "Historial ▲";
+
+    } else {
+
+        panel.hidden = true;
+
+        boton.textContent = "Historial ▼";
+
+    }
 
 }
