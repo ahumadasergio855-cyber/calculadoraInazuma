@@ -1,6 +1,4 @@
-function saludar(){
-    alert("JavaScript funciona");
-}
+
 
 function sumar(){
     let numero1 = 
