@@ -1,53 +1,49 @@
+function agregarNumero(numero){
+    let pantalla =
+        document.getElementById("pantalla");
 
-
-function sumar(){
-    let numero1 = 
-        Number(document.getElementById("numero1").value);
-    
-    let numero2 = 
-        Number(document.getElementById("numero2").value);
-
-    let resultado = numero1 + numero2;
-
-    document.getElementById("pantalla").value = resultado;
-    
+        pantalla.value = 
+            pantalla.value + numero;
 }
 
-function restar(){
-    let numero1 = 
-        Number(document.getElementById("numero1").value);
-    
-    let numero2 = 
-        Number(document.getElementById("numero2").value);
 
-    let resultado = numero1 - numero2;
+function calcular(){
+    let pantalla = 
+    document.getElementById("pantalla");
 
-    document.getElementById("pantalla").value = resultado;
-    
+    pantalla.value =
+    eval(pantalla.value);
 }
 
-function multiplicar(){
-    let numero1 = 
-        Number(document.getElementById("numero1").value);
-    
-    let numero2 = 
-        Number(document.getElementById("numero2").value);
+function  agregarOperador(op){
 
-    let resultado = numero1 * numero2;
+    let pantalla =
+    document.getElementById("pantalla");
 
-    document.getElementById("pantalla").value = resultado;
-    
+    pantalla.value = 
+        pantalla.value + op;
 }
 
-function dividir(){
-    let numero1 = 
-        Number(document.getElementById("numero1").value);
-    
-    let numero2 = 
-        Number(document.getElementById("numero2").value);
+function agregarOperador(op){
+    let pantalla = 
+        document.getElementById("pantalla");
 
-    let resultado = numero1 / numero2;
+    pantalla.value =
+        pantalla.value - op;
+}
 
-    document.getElementById("pantalla").value = resultado;
-    
+function agregarOperador(op){
+    let pantalla = 
+        document.getElementById("pantalla");
+
+    pantalla.value =
+        pantalla.value * op;
+}
+
+function agregarOperador(op){
+    let pantalla = 
+        document.getElementById("pantalla");
+
+    pantalla.value =
+        pantalla.value / op;
 }
