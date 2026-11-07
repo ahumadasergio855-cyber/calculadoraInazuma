@@ -2,8 +2,7 @@ function agregarNumero(numero){
     let pantalla =
         document.getElementById("pantalla");
 
-        pantalla.value = 
-            pantalla.value + numero;
+        pantalla.value = pantalla.value + numero;
 }
 
 
@@ -20,30 +19,27 @@ function  agregarOperador(op){
     let pantalla =
     document.getElementById("pantalla");
 
-    pantalla.value = 
-        pantalla.value + op;
+    pantalla.value =  pantalla.value + op;
 }
 
-function agregarOperador(op){
-    let pantalla = 
-        document.getElementById("pantalla");
+function limpiar(){
+    let pantalla = document.getElementById("pantalla");
 
-    pantalla.value =
-        pantalla.value - op;
+    pantalla.value = "";
 }
 
-function agregarOperador(op){
-    let pantalla = 
-        document.getElementById("pantalla");
+function raizCuadrada(){
+    let pantalla = document.getElementById("pantalla");
+    let numero = number(pantalla.value);
+    if(pantalla.value === ""){
+        pantalla.value = "Introduce un número";
 
-    pantalla.value =
-        pantalla.value * op;
-}
+    }else if(numero < 0){
+        pantalla.value = "Error de dato";
 
-function agregarOperador(op){
-    let pantalla = 
-        document.getElementById("pantalla");
+    }else{
+        
+        pantalla.value = Math.sqrt(numero);
 
-    pantalla.value =
-        pantalla.value / op;
+    }
 }
