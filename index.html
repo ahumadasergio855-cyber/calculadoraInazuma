@@ -11,47 +11,17 @@
         <h1>⚡ Inazuma Calculator ⚡</h1>
 
         <div class="pantalla-contenedor">
-            <button
-            class=""historial-toggle"
-            id="boton-historial"
-            onclick="alternarHistorial()">
+          <button
+          class="historial-toggle"
+             id="boton-historial"
+              onclick="alternarHistorial()">
+
         </button>
-        </div>
+             
+         
+     </div>
 
-        <input 
-        type ="text"
-        id="pantalla"
-        readonly>
-        <br><br>
-        
-
-        <br><br>
-
-        <button onclick="agregarOperador('+')">+</button>
-        <button onclick="agregarOperador('-')">-</button>
-        <button onclick="agregarOperador('*')">x</button>
-        <button onclick="agregarOperador('/')">÷</button>
-        <button onclick="raizCuadrada()">√</button>
-
-        <button onclick="calcular()">=</button>
-        <button onclick="limpiar()">C</button>
-
-        <button class="numero" onclick="agregarNumero('0')">
-        <button onclick="agregarNumero('1')">1</button>
-        <button onclick="agregarNumero('2')">2</button>
-        <button onclick="agregarNumero('3')">3</button>
-        <button onclick="agregarNumero('4')">4</button>
-        <button onclick="agregarNumero('5')">5</button>
-        <button onclick="agregarNumero('6')">6</button>
-        <button onclick="agregarNumero('7')">7</button>
-        <button onclick="agregarNumero('8')">8</button>
-        <button onclick="agregarNumero('9')">9</button>
-        <button onclick="agregarNumero('.')">.</button>    
-        </button>
-
-
-      </div>
-      <!-- HISTORIAL DE OPERACIONES -->
+        <!-- HISTORIAL DE OPERACIONES -->
 
         <div class="historial">
 
@@ -60,10 +30,145 @@
          <div id="historial-lista">
 
           </div>
+        <input 
+        type ="text"
+        id="pantalla"
+        readonly>
+        <br><br>
+        
 
-              <button onclick="limpiarHistorial()">
-                    Borrar historial
+        <br><br>
+     <div class="teclado">
+        <button class="boton-imagen" 
+            onclick="agregarOperador('+')">
+
+            <img src="assets/sumar.png"
+            alt="sumar">
+        
+        </button>
+        <button class="boton-imagen" 
+            onclick="agregarOperador('-')">
+
+            <img src="assets/restar.png"
+            alt="restar">
+        
+        </button>
+        <button class="boton-imagen" 
+            onclick="agregarOperador('*')">
+
+            <img src="assets/multiplicar.png"
+            alt="multiplicar">
+        
+        </button>
+        <button class="boton-imagen" 
+            onclick="agregarOperador('/')">
+
+            <img src="assets/dividir.png"
+            alt="dividir">
+        
+        </button>
+        
+        <button class="boton-imagen" 
+            onclick="raizCuadrada('√')">
+
+            <img src="assets/raiz.png"
+            alt="dividir">
+        
+        </button>
+        <button onclick="calcular()">=</button>
+        
+
+        
+        <button class="boton-imagen" 
+            onclick="agregarNumero('1')">
+
+            <img src="assets/1.png"
+            alt="1">
+        
+        </button>
+
+        <button class="boton-imagen"
+            onclick="agregarNumero('2')">
+
+            <img src="assets/2.png"
+            alt="2">
+        
+        </button>
+        <button class="boton-imagen"
+            onclick="agregarNumero('2')">
+
+            <img src="assets/3.png"
+            alt="3">
+        
+        </button>
+        <button class="boton-imagen"
+            onclick="agregarNumero('4')">
+
+            <img src="assets/4.png"
+            alt="4">
+
+        </button>
+        <button class="boton-imagen"
+            onclick="agregarNumero('5')">
+
+            <img src="assets/5.png"
+            alt="5">
+
+
+        </button>
+        <button class="boton-imagen"
+        onclick="agregarNumero('6')">
+
+        <img src="assets/6.png"
+        alt="6">
+
+        </button>
+        <button 
+            class="boton-imagen"
+            onclick="agregarNumero('7')">
+
+            <img src="assets/7.png" 
+            alt="7">
+        </button>
+        <button class="boton-imagen"
+            onclick="agregarNumero('8')">
+
+            <img src="assets/8.png"
+            alt="8">
+
+        </button>
+        <button class="boton-imagen"
+            onclick="agregarNumero('9')">
+
+            <img src="assets/9.png"
+            alt="9">
+
+        </button>
+        <button class="boton-imagen" 
+            onclick="agregarNumero('0')">
+
+            <img src="assets/0.png"
+            alt="0">
+        </button>
+        <button class="boton-imagen"
+            onclick="agregarNumero('.')">
+
+            <img src="assets/decimal.png"
+            alt=" coma decimal">
+            
+        </button>
+
+        <button class="boton-imagen"
+                    onclick="limpiarHistorial()">
+                    
+                    <img src="assets/limpiar.png"
+                    alt="limpiar">
               </button>
+     </div>
+        
+      
+
+    </div>
 
         </div>
         <script src="scripts.js"></script>
