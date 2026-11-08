@@ -1,4 +1,3 @@
-
 // CONTROL DE LA CALCULADORA
 
 let resultadoMostrado = false;
@@ -21,17 +20,8 @@ function agregarNumero(numero) {
 
     }
 
-    // No permitimos números decimales
-
-    if (numero === ".") {
-
-        pantalla.value = "Error";
-
-        resultadoMostrado = true;
-
-        return;
-
-    }
+    pantalla.value = 
+        pantalla.value + numero;
 
     pantalla.value = pantalla.value + numero;
 
@@ -239,3 +229,4 @@ function alternarHistorial() {
     }
 
 }
+
