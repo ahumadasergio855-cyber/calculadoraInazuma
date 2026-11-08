@@ -1,3 +1,4 @@
+
 // CONTROL DE LA CALCULADORA
 
 let resultadoMostrado = false;
@@ -15,13 +16,9 @@ function agregarNumero(numero) {
     if (resultadoMostrado || pantalla.value === "Error") {
 
         pantalla.value = "";
-
         resultadoMostrado = false;
 
     }
-
-    pantalla.value = 
-        pantalla.value + numero;
 
     pantalla.value = pantalla.value + numero;
 
@@ -229,4 +226,3 @@ function alternarHistorial() {
     }
 
 }
-
