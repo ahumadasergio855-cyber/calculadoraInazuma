@@ -11,29 +11,35 @@
         <h1>⚡ Inazuma Calculator ⚡</h1>
 
         <div class="pantalla-contenedor">
-          <button
-          class="historial-toggle"
-             id="boton-historial"
-              onclick="alternarHistorial()">
 
+          <button
+             class="historial-toggle"
+              id="boton-historial"
+             onclick="alternarHistorial()">
+
+             📜 Historial ▼
+
+         </button>
+
+    <div class="historial-panel" id="historial-panel" hidden>
+
+        <h2>Historial de operaciones</h2>
+
+        <div id="historial-lista"></div>
+
+        <button onclick="limpiarHistorial()">
+            Borrar historial
         </button>
-             
-         
+
      </div>
 
-        <!-- HISTORIAL DE OPERACIONES -->
-
-        <div class="historial">
-
-         <h2>📜 Historial</h2>
-
-         <div id="historial-lista">
-
-          </div>
-        <input 
-        type ="text"
+         <input
+        type="text"
         id="pantalla"
-        readonly>
+        readonly
+        placeholder="0">
+
+    </div>
         <br><br>
         
 
@@ -97,7 +103,7 @@
         
         </button>
         <button class="boton-imagen"
-            onclick="agregarNumero('2')">
+            onclick="agregarNumero('3')">
 
             <img src="assets/3.png"
             alt="3">
