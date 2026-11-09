@@ -1,4 +1,3 @@
-
 // CONTROL DE LA CALCULADORA
 
 let resultadoMostrado = false;
@@ -34,12 +33,17 @@ function agregarOperador(op) {
         return;
     }
 
-    // Si había un resultado, lo conservamos
-    // para continuar operando con él
+    let ultimoCaracter = pantalla.value.slice(-1);
+
+    if("+-*/".includes(ultimoCaracter)){
+
+        pantalla.value = pantalla.value.slice(0, -1);
+
+    }
 
     pantalla.value = pantalla.value + op;
-
-    resultadoMostrado = false;
+    resultadosMostrado =  false;
+    
 
 }
 
@@ -226,3 +230,29 @@ function alternarHistorial() {
     }
 
 }
+function agregarDecimal(){
+    let pantalla = document.getElementById("pantalla");
+
+    let expresion = pantalla.value;
+
+    if(resultadoMostrado || expresion === "" || expresion === "Error"){
+        return;
+    }
+
+    let ultimoCaracter = expresion.slice(-1);
+
+    if("+-*/".includes(ultimoCaracter)){
+        return;
+    }
+
+    let partes = expresion.split(/[+\-*/]/);
+
+    let numeroActual = partes[partes.length -1];
+
+    if(numeroActual.includes(".")){
+        return;
+    }
+
+    pantalla.value = pantalla.value + ".";
+}
+
