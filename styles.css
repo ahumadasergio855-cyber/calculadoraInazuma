@@ -79,12 +79,15 @@ input[type="number"]{
     font-size: 1rem;
 }
 
-button:hover{
+button:not(.boton-imagen):hover{
+
     background-color:#38ff7a;
     color:#0f172a;
+
     transform:scale(1.1);
+
     box-shadow:
-    0 0 20px rgba(56,255,122,0.8);
+        0 0 20px rgba(56,255,122,0.8);
 }
 
 
