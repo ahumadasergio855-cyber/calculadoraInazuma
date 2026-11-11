@@ -16,3 +16,9 @@ Observaciones:
 revisar bien nombre de las variables
 mejorar en las conexiones de funciones con archivos html
 especificaciones en el css con mayores comentarios.
+
+#Proximos cambios
+- Pantalla de carga (vídeo de canva en bucle ).
+- Operaciones de áreas y volúmenes.
+- personalización de personajes de la app estilo Inazuma 
+
